@@ -1,0 +1,27 @@
+{
+  "name": "modulo-22-page-ojects",
+  "version": "1.0.0",
+  "description": "Modulo 22 - Page Objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy.open": "npx cypress open",
+    "cy.run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodrigo-Tozatti/Modulo-22-Page-Ojects.git"
+  },
+  "author": "Rodrigo Tozatti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodrigo-Tozatti/Modulo-22-Page-Ojects/issues"
+  },
+  "homepage": "https://github.com/Rodrigo-Tozatti/Modulo-22-Page-Ojects#readme",
+  "dependencies": {
+    "cypress": "^12.11.0"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3"
+  }
+}
