@@ -19,3 +19,5 @@ jobs:
         uses: cypress-io/github-action@v5
         
         continue-on-error: true # ---> caso o apresente erro não para o teste
+        with:
+          browser: chrome
