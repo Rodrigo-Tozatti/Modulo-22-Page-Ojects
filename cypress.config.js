@@ -8,10 +8,11 @@ module.exports = defineConfig({
     reporter: "mochawesome",
                 reporterOptions: {
                   reportDir: "mochawesome-report",
-                  overwrite: true,
+                  overwrite: false,
+                  //reportFilename: index.html,
                   html: true,
                   json: false,
-                  timestamp: "mmddyyyy_HHMMss",
+                  timestamp: "dd-mm-yyyy_HH-MM",
                 },
 
     baseUrl: "http://lojaebac.ebaconline.art.br/"
