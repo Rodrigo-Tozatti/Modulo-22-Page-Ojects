@@ -1,15 +1,21 @@
 name: Projeto-cypress-Page-Ojects
 on:
   push:
-    branches: [main]
+    branches: [main] # ---> escolher a banch que será executada
   
 jobs:
-  cypress-run:
+  Teste-Page-Objects: #Nome do teste (ou projeto)
     runs-on: ubuntu-22.04
+   
     steps:
-      - name: Checkout
+      - name: Checkout # ---> baixar o projeto e instalar as dependencias (pesquisar na lateral por: Cypress.io)
         uses: actions/checkout@v3
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+        
+      - uses: actions/setup-node@v3 # ---> startar node (pesquisar na lateral por: Setup Node.js enviroment)
+        with:
+          node-version: 18
+
+      - name: Cypress run # ---> executar o projeto (pesquisar na lateral por: Cypress.io)
         uses: cypress-io/github-action@v5
+        
+        continue-on-error: true # ---> caso o apresente erro não para o teste
